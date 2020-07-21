@@ -1,0 +1,32 @@
+ubuntu@ip-172-31-44-155:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-44-155:~$ ls
+ubuntu@ip-172-31-44-155:~$ mkdir first
+ubuntu@ip-172-31-44-155:~$ mkdir second
+ubuntu@ip-172-31-44-155:~$ ls
+first  second
+ubuntu@ip-172-31-44-155:~$ cd first
+ubuntu@ip-172-31-44-155:~/first$ echo "print(1)" > first.py
+ubuntu@ip-172-31-44-155:~/first$ ls
+first.py
+ubuntu@ip-172-31-44-155:~/first$ less first.py
+ubuntu@ip-172-31-44-155:~/first$ cd /home/ubuntu/second
+ubuntu@ip-172-31-44-155:~/second$ echo "print(2)" > second.py
+ubuntu@ip-172-31-44-155:~/second$ ls
+second.py
+ubuntu@ip-172-31-44-155:~/second$ less second.py
+ubuntu@ip-172-31-44-155:~/second$ mv second.py /home/ubuntu/first
+ubuntu@ip-172-31-44-155:~/second$ ls
+ubuntu@ip-172-31-44-155:~/second$ cd /home/ubuntu/first
+ubuntu@ip-172-31-44-155:~/first$ ls
+first.py  second.py
+ubuntu@ip-172-31-44-155:~/first$ rm -r /home/ubuntu/second
+ubuntu@ip-172-31-44-155:~/first$ cd
+ubuntu@ip-172-31-44-155:~$ ls
+first
+ubuntu@ip-172-31-44-155:~$ mv first first_second
+ubuntu@ip-172-31-44-155:~$ ls
+first_second
+ubuntu@ip-172-31-44-155:~$ rm -r first_second
+ubuntu@ip-172-31-44-155:~$ ls
+ubuntu@ip-172-31-44-155:~$

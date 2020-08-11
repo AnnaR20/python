@@ -1,0 +1,24 @@
+#1
+
+ubuntu@ip-172-31-25-73:~$ ls
+bash.txt         bash.txt.zip      header.txt  logs.txt  numbers2.pu  tfile.py
+bash.txt.tar     create_matrix.py  hello.py    new       test.txt
+bash.txt.tar.gz  file2.txt         lesson7     numb.py   test2.txt
+ubuntu@ip-172-31-25-73:~$ ls | grep '^t.*.py$'
+tfile.py
+
+
+#2
+ubuntu@ip-172-31-25-73:~$ grep print *.py
+create_matrix.py:print(b)
+hello.py:print('Good day')
+numb.py:    print(i)
+ubuntu@ip-172-31-25-73:~$
+
+
+#3
+ubuntu@ip-172-31-25-73:~$ uptime
+ 19:41:59 up 5 days, 4 min,  1 user,  load average: 0.00, 0.00, 0.00
+ubuntu@ip-172-31-25-73:~$ uptime | sed 's/.* \([0-9]\+\) day.*/\1/'
+5
+ubuntu@ip-172-31-25-73:~$
